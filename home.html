@@ -17,7 +17,7 @@
                     <div class="stats shadow">
                         <div class="stat">
                             <div class="stat-title">Account Balance</div>
-                            <div class="text-center stat-value">9400</div>
+                            <div id="account-balance" class="text-center stat-value">9400</div>
                         </div>
                     </div>
                     <div class="divider"></div>
@@ -29,7 +29,7 @@
                     <!-- Feature End -->
                     <div class="divider"></div>
                     <!-- Add money form start -->
-                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <form class="card-body">
                             <div class="form-control">
                                 <label class="label">
@@ -42,22 +42,43 @@
                                     <span class="label-text">Pin</span>
                                 </label>
                                 <input id="input-pin-number" type="password" placeholder="Enter Pin Number" autocomplete="off" class="input input-bordered" required />
-                                <label class="label">
-                                    <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
-                                </label>
                             </div>
                             <div class="form-control mt-6">
-                                <button id="btn-add-money" class="btn btn-primary">Add Money</button>
+                                <button id="btn-add-money" class="rounded-full btn btn-primary">Add Money</button>
                             </div>
                         </form>
                     </div>
                     <!-- Add money form end -->
+
+
+                    <!-- Cash Out form start -->
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Amount</span>
+                                </label>
+                                <input id="cash-out-amount" type="text" placeholder="Enter your Amount" class="input input-bordered" required />
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Pin</span>
+                                </label>
+                                <input id="cash-out-pin" type="password" placeholder="Enter Pin Number" autocomplete="off" class="input input-bordered" required />
+                            </div>
+                            <div class="form-control mt-6">
+                                <button id="btn-cash-out" class="rounded-full btn btn-primary">Cash Out</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Cash Out form End -->
                 </div>
             </div>
         </div>
     </main>
     <script src="JS/utilities2.js"></script>
     <script src="JS/addmoney2.js"></script>
+    <script src="JS/cashout.js"></script>
 </body>
 
 </html>

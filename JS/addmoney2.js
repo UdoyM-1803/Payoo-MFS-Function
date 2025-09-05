@@ -7,8 +7,11 @@ document.getElementById('btn-add-money')
 
         // Worse way to validate pin number
         if (pinNumber === 1234) {
+            const balance = getTextFieldValueById('account-balance');
+            const newBalance = balance + addMoney;
 
-        }
+            document.getElementById('account-balance').innerText = newBalance;
+        } 
         else {
             alert('Failed to Transaction.');
         }
